@@ -266,7 +266,7 @@
             <h2>Подберем тур вместе!</h2>
 
             <!-- Куда едем -->
-            <form>
+            <form action="contacts.php" method="post" enctype="multipart/form-data" id="travel_form">
               <fieldset>
                 <div class="form-group">
                   <label class="col-md-5 control-label" for="where">Куда едем?</label>
@@ -284,7 +284,7 @@
                 <div class="form-group">
                   <label class="col-md-5 control-label" for="adults">Кто едет?</label>
                   <div class="col-md-3">
-                    <select id="adults" name="adults" class="form-control go" placeholder="ddd">
+                    <select id="adults" name="adults" class="form-control go">
                       <option value="" disabled selected>Взрослых</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -347,7 +347,7 @@
                 <div class="form-group">
                   <label class="col-md-5 control-label" for="phone">Номер телефона</label>
                   <div class="col-md-5">
-                    <input id="phone" name="phone" type="text" class="form-control go phone" placeholder="+3 (0__)___-__-__" required></input>
+                    <input id="phone" name="phone" type="text" class="form-control go phone" placeholder="+3 (0__)___-__-__" name="phone" required></input>
                   </div>
                 </div>
 
@@ -355,7 +355,7 @@
                 <div class="form-group">
                   <label class="col-md-5 control-label" for="email">E-Mail</label>
                   <div class="col-md-5">
-                    <input type="email" class="form-control go" placeholder="name@email.com" required></input>
+                    <input type="email" class="form-control go" placeholder="name@email.com" name="contact" required></input>
                   </div>
                 </div>
               </fieldset>
@@ -737,6 +737,11 @@
         }
       } 
     });
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById("travel_form").reset();
+    }
   </script>
   <!-- Bootstrap core JavaScript -->
 
