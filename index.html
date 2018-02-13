@@ -263,7 +263,7 @@
         <!--What Our Clients Say-->
         <section class="section-90 section-md-120">
           <div class="shell">
-            <h2>ТУТ БУДЕТ ФОРМА)</h2>
+            <h2>Подберем тур вместе!</h2>
 
             <!-- Куда едем -->
             <form>
@@ -271,7 +271,7 @@
                 <div class="form-group">
                   <label class="col-md-5 control-label" for="where">Куда едем?</label>
                   <div class="col-md-5">
-                    <select id="where" name="where" class="form-control">
+                    <select id="where" name="where" class="form-control go">
                       <option value="Испания">Испания</option>
                       <option value="Италия">Италия</option>
                       <option value="Турция">Турция</option>
@@ -284,7 +284,8 @@
                 <div class="form-group">
                   <label class="col-md-5 control-label" for="adults">Кто едет?</label>
                   <div class="col-md-3">
-                    <select id="adults" name="adults" class="form-control">
+                    <select id="adults" name="adults" class="form-control go" placeholder="ddd">
+                      <option value="" disabled selected>Взрослых</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -294,7 +295,8 @@
                     </select>
                   </div>
                   <div class="col-md-2">
-                    <select id="children" name="children" class="form-control">
+                    <select id="children" name="children" class="form-control go">
+                      <option value="" disabled selected>Детей</option>
                       <option value="0">Без детей</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -308,7 +310,7 @@
                 <div class="form-group">
                   <label class="col-md-5 control-label" for="money">Бюджет</label>
                   <div class="col-md-5">
-                    <select id="money" name="money" class="form-control">
+                    <select id="money" name="money" class="form-control go">
                       <option value="400">&lt;$400</option>
                       <option value="500">$500</option>
                       <option value="600">$600</option>
@@ -330,13 +332,13 @@
                   <div class="col-md-2">
                     <fieldset class="small-fieldset">
                       <legend>С</legend>
-                      <input id="when" name="when" type="date" class="form-control" placeholder="Начало отдыха"></input>
+                      <input id="when" name="when" type="date" class="form-control go" placeholder="Начало отдыха"></input>
                     </fieldset>
                   </div>
                   <div class="col-md-2">
                     <fieldset class="small-fieldset">
                       <legend>Количество дней</legend>
-                      <input id="days" name="days" type="number" class="form-control" min="5" max="30"></input>
+                      <input id="days" name="days" type="number" class="form-control go" min="5" max="30"></input>
                     </fieldset>
                   </div>
                 </div>
@@ -345,7 +347,7 @@
                 <div class="form-group">
                   <label class="col-md-5 control-label" for="phone">Номер телефона</label>
                   <div class="col-md-5">
-                    <input id="phone" name="phone" type="text" class="form-control phone" placeholder="+3 (0__)___-__-__" required></input>
+                    <input id="phone" name="phone" type="text" class="form-control go phone" placeholder="+3 (0__)___-__-__" required></input>
                   </div>
                 </div>
 
@@ -353,11 +355,11 @@
                 <div class="form-group">
                   <label class="col-md-5 control-label" for="email">E-Mail</label>
                   <div class="col-md-5">
-                    <input type="email" class="form-control" value="Введите ваш e-mail" placeholder="name@email.com" required></input>
+                    <input type="email" class="form-control go" placeholder="name@email.com" required></input>
                   </div>
                 </div>
               </fieldset>
-              <button class="btn btn-primary btn-sm btn-icon btn-icon-left" type="submit"><span class="icon mdi mdi-telegram"></span>Send</button>
+              <button class="btn btn-primary btn-sm btn-icon btn-icon-left" type="submit"><span class="icon mdi mdi-telegram"></span>Отправить заявку</button>
             </form>
 <!--               <form name="choose_trip" action="mailto:адрес вашей электронной почты" enctype="text/plain">
                 <p>Куда едем?</p>
