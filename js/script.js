@@ -76,7 +76,7 @@ var userAgent = navigator.userAgent.toLowerCase(),
 /**
  * Initialize All Scripts
  */
-$document.ready(function () {
+
 
 	/**
 	 * isScrolledIntoView
@@ -309,19 +309,19 @@ $document.ready(function () {
 		var regularConstraintsMessages = [
 			{
 				type: regula.Constraint.Required,
-				newMessage: "The text field is required."
+				newMessage: "Это поле обязательно для заполнения."
 			},
 			{
 				type: regula.Constraint.Email,
-				newMessage: "The email is not a valid email."
+				newMessage: "Пожалуйста, введите корректный адрес электронной почты."
 			},
 			{
 				type: regula.Constraint.Numeric,
-				newMessage: "Only numbers are required"
+				newMessage: "Допустимы только цифры"
 			},
 			{
 				type: regula.Constraint.Selected,
-				newMessage: "Please choose an option."
+				newMessage: "Пожалуйста, выберите один из вариантов."
 			}
 		];
 
@@ -339,7 +339,7 @@ $document.ready(function () {
 	 * isValidated
 	 * @description  check if all elemnts pass validation
 	 */
-	function isValidated(elements, captcha) {
+	function isValidated(elements) {
 		var results, errors = 0;
 
 		if (elements.length) {
@@ -356,77 +356,14 @@ $document.ready(function () {
 				}
 			}
 
-			if (captcha) {
-				if (captcha.length) {
-					return validateReCaptcha(captcha) && errors == 0
-				}
-			}
-
 			return errors == 0;
 		}
 		return true;
 	}
 
-	/**
-	 * validateReCaptcha
-	 * @description  validate google reCaptcha
-	 */
-	function validateReCaptcha(captcha) {
-		var captchaToken = captcha.find('.g-recaptcha-response').val();
 
-		if (captchaToken.length === 0) {
-			captcha
-				.siblings('.form-validation')
-				.html('Please, prove that you are not robot.')
-				.addClass('active');
-			captcha
-				.closest('.form-group')
-				.addClass('has-error');
 
-			captcha.on('propertychange', function () {
-				var $this = $(this),
-					captchaToken = $this.find('.g-recaptcha-response').val();
 
-				if (captchaToken.length > 0) {
-					$this
-						.closest('.form-group')
-						.removeClass('has-error');
-					$this
-						.siblings('.form-validation')
-						.removeClass('active')
-						.html('');
-					$this.off('propertychange');
-				}
-			});
-
-			return false;
-		}
-
-		return true;
-	}
-
-	/**
-	 * onloadCaptchaCallback
-	 * @description  init google reCaptcha
-	 */
-	window.onloadCaptchaCallback = function () {
-		for (i = 0; i < plugins.captcha.length; i++) {
-			var $capthcaItem = $(plugins.captcha[i]);
-
-			grecaptcha.render(
-				$capthcaItem.attr('id'),
-				{
-					sitekey: $capthcaItem.attr('data-sitekey'),
-					size: $capthcaItem.attr('data-size') ? $capthcaItem.attr('data-size') : 'normal',
-					theme: $capthcaItem.attr('data-theme') ? $capthcaItem.attr('data-theme') : 'light',
-					callback: function (e) {
-						$('.recaptcha').trigger('propertychange');
-					}
-				}
-			);
-			$capthcaItem.after("<span class='form-validation'></span>");
-		}
-	};
 
 	/**
 	 * parseJSONObject
@@ -1610,14 +1547,6 @@ $document.ready(function () {
 		});
 	}
 
-	/**
-	 * Google ReCaptcha
-	 * @description Enables Google ReCaptcha
-	 */
-	if (plugins.captcha.length) {
-		var i;
-		$.getScript("//www.google.com/recaptcha/api.js?onload=onloadCaptchaCallback&render=explicit&hl=en");
-	}
 
 	/**
 	 * RD Mailform
@@ -2122,7 +2051,7 @@ $document.ready(function () {
 			}
 		}
 	}
-});
+
 
 
 

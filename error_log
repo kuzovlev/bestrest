@@ -1,0 +1,19 @@
+[26-Oct-2018 15:25:14 Europe/Helsinki] PHP Notice:  Undefined index: file in /home/fhzzlkgd/public_html/contacts.php on line 21
+[02-Dec-2018 20:11:19 Europe/Helsinki] PHP Notice:  Undefined index: file in /home/fhzzlkgd/public_html/contacts.php on line 21
+[03-Dec-2018 00:17:31 Europe/Helsinki] PHP Notice:  Undefined index: file in /home/fhzzlkgd/public_html/contacts.php on line 21
+[31-Jan-2019 11:07:47 Europe/Helsinki] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/fhzzlkgd/public_html/action_ajax_form.php on line 26
+[31-Jan-2019 11:13:26 Europe/Helsinki] PHP Notice:  Undefined index: file in /home/fhzzlkgd/public_html/contacts.php on line 21
+[31-Jan-2019 11:17:41 Europe/Helsinki] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/fhzzlkgd/public_html/action_ajax_form.php on line 26
+[31-Jan-2019 11:20:28 Europe/Helsinki] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/fhzzlkgd/public_html/action_ajax_form.php on line 26
+[31-Jan-2019 11:29:52 Europe/Helsinki] PHP Notice:  Undefined index: file in /home/fhzzlkgd/public_html/contacts.php on line 21
+[31-Jan-2019 11:31:05 Europe/Helsinki] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/fhzzlkgd/public_html/action_ajax_form.php on line 26
+[31-Jan-2019 11:31:33 Europe/Helsinki] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/fhzzlkgd/public_html/action_ajax_form.php on line 26
+[31-Jan-2019 11:38:02 Europe/Helsinki] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/fhzzlkgd/public_html/action_ajax_form.php on line 26
+[31-Jan-2019 11:45:12 Europe/Helsinki] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/fhzzlkgd/public_html/action_ajax_form.php on line 26
+[31-Jan-2019 12:17:01 Europe/Helsinki] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/fhzzlkgd/public_html/action_ajax_form.php on line 26
+[31-Jan-2019 15:21:38 Europe/Helsinki] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/fhzzlkgd/public_html/action_ajax_form.php on line 26
+[31-Jan-2019 15:23:56 Europe/Helsinki] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/fhzzlkgd/public_html/action_ajax_form.php on line 26
+[31-Jan-2019 15:25:38 Europe/Helsinki] PHP Notice:  Undefined index: file in /home/fhzzlkgd/public_html/contacts.php on line 21
+[31-Jan-2019 15:28:33 Europe/Helsinki] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/fhzzlkgd/public_html/action_ajax_form.php on line 26
+[31-Jan-2019 15:28:34 Europe/Helsinki] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/fhzzlkgd/public_html/action_ajax_form.php on line 26
+[02-Feb-2019 09:49:16 Europe/Helsinki] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/fhzzlkgd/public_html/action_ajax_form.php on line 26

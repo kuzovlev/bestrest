@@ -1,6 +1,6 @@
 <?php
 if (isset ($_POST['contact'])) {
-  $to = "kuzovlev.dm@gmail.com";
+  $to = "bestrest.agency@gmail.com";
   $from = $_POST['contact'];
   $subject = "Заполнена форма подбора тура на ".$_SERVER['HTTP_REFERER'];
   $message = "Летим в: ".$_POST['where']."\nEmail: ".$from."\nЛетят: взрослых - ".$_POST['adults']."; Детей - ".$_POST['children']."\nДенег у них: ".$_POST['money']." вечнозеленых.\nХотят лететь с ".$_POST['when']." на ".$_POST['days']." дней.\n Телефон ".$_POST['phone'];
